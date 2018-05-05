@@ -1,84 +1,74 @@
-```
------------------------------------------------------------
----------------_-------------------------------------------
---------------| |_   _ _ __ ___  _ __   ___ _ __ ----------
----------- _  | | | | | '_ ` _ \| '_ \ / _ \ '__|----------
-----------| |_| | |_| | | | | | | |_) |  __/ |-------------
------------\___/-\__,_|_| |_| |_| .__/-\___|_|-------------
---------------------------------|_|------------------------
--Coding for you since 2010. All rights reserved © 2018 year
------------------------------------------------------------
-```
+Codigo realizado por Jumper92, traducido por Rufi para el Servidor WoW Syndicate.
 
 # World of WarCraft Launcher
-`Launcher` - это любительский инструментарий для предоставления быстрого доступа игрокам Вашего сервера ко множеству функций.
+`Launcher` - Este es un kit de herramientas para aficionados que proporciona acceso rápido a los jugadores de su servidor para una variedad de funciones.
 
 <p align="center" >
 <img src="https://pp.vk.me/c631428/v631428303/500ff/wMh1l71dY5M.jpg" width="500" height="356"/>
 </p>
 
 ---
-## Документация
-Официальную документацию Вы сможете найти по [ССЫЛКЕ](https://github.com/Gagauz2010/WOWLauncher/blob/master/README.docx).
+## Documentación
+La documentación oficial se puede encontrar en [REFERENCIA] (https://github.com/Gagauz2010/WOWLauncher/blob/master/README.docx).
 
 ---
-## Возможности
+## Características
 
-### Основные возможности
-* Автообновление программы;
-* Чиста кэша;
-* Реалмлист рерайт (реализовано как для клиентов с явным реалмлистом, так и для клиентов без него (версия 5.X и выше));
-* Вывод новостей;
-* Скачивание новых патчей (без обновления инструментария):
- * Сравнение MD5 хэша файлов (ваши патчи всегда будут в сохранности);
- * Отображение общего количества патчей и текущий прогресс;
- * Отображение размера файла необходимого для загрузки;
- * Отображение размера скаченного файла;
- * Отображение скорости загрузки;
- * Отображение рассчитанного оставшегося времени загрузки текущего файла;
- * Отображение полоски прогресса загрузки текущего файла;
- * Отображения процентов прогресса загрузки текущего файла;
- * Отображение полоски общего прогресса загрузки обновления;
- * Отображения процентов общего прогресса загрузки обновления;
- * Возобновляемая загрузка обновлений ```(докачка файлов)```;
- * - **(!опционально)** Система случайных ссылок. 
- ```Для одного и того же файла можно будет задавать сразу несколько ссылок и программа обновления будет выбирать случайную ссылку для загрузки, что обеспечит меньшую нагрузку на сервер(а). Единственное требование - все ссылки должны быть прямые.```
-* Удаление серверных патчей;
-```если игроки пожелают уйти с сервера (без вмешательства в инструментарий)```
-* Удаление всех нежелательных патчей;
-```Сфера применения: откат неудачных обновлений, удаление чужеродных патчей кроме стоковских и серверных```
-* Запрет запуска инструментария:
- * Запрет запуска лаунчера повторно;
- * Запрет запуска лаунчера пока запущен клиент WoW;
-* **(!опционально)** Кроссреалмовая селективная загрузка;
-```определение списка обновлений согласно версии клиента для серверов с мультиаддоновыми реалмами```
+### Características principales
+* Actualización automática del programa;
+* Limpie la caché;
+* Realmist rewrite (implementado tanto para clientes con un realmist explícito, como para clientes sin él (versión 5.X y superior));
+* Salida de noticias;
+* Descarga de nuevos parches (sin actualizar el toolkit):
+ * Compare archivos hash MD5 (sus parches siempre estarán seguros);
+ * Muestra el número total de parches y el progreso actual;
+ * Muestra el tamaño del archivo necesario para cargar;
+ * Muestra el tamaño del archivo descargado;
+ * Muestra la velocidad de descarga;
+ * Muestra el tiempo restante calculado para cargar el archivo actual;
+ * Muestra la barra de progreso del archivo actual;
+ * Muestra el porcentaje de progreso del archivo actual;
+ * Muestra la barra de progreso de la descarga de actualización;
+ * Muestra porcentajes del progreso general de descarga de actualización;
+ * Descarga renovable de actualizaciones `` `(descarga de archivos)` ``;
+ * - ** (! opcional) ** El sistema de enlaces aleatorios.
+ `` `Para el mismo archivo, puede establecer varios enlaces a la vez y el programa de actualización seleccionará un enlace de descarga aleatorio, que proporcionará menos carga en el servidor (a). El único requisito es que todos los enlaces sean directos .```
+* Eliminar parches de servidor;
+`` `si los jugadores desean abandonar el servidor (sin intervención en el juego de herramientas)` ``
+* Eliminar todos los parches no deseados;
+`` `Alcance: reversión de actualizaciones fallidas, eliminación de parches extraterrestres excepto Stokovsky y servidor```
+* Impedir el lanzamiento del kit de herramientas:
+ * Prohibir lanzador de lanzamiento repetidamente;
+ * Prevenir el iniciador de inicio mientras se ejecuta el cliente WoW;
+* ** (! opcional) ** Carga selectiva cruzada real;
+`` `definición de la lista de actualización según la versión del cliente para servidores con reinos de múltiples complementos```
 
-### Настройки приложения
-Приложение имеет свои собственные пользовательские настройки:
+### Configuración de la aplicación
+La aplicación tiene su propia configuración personalizada:
 
-* **Автоматическая авторизация в клиенте игры** по сохраненным пользовательским данным:
-```Введенные данные по умолчанию остаются анонимными```
-* Явное и неявное **указание пути клиента игры**
-```Установка программы в корень клиента игры или свободное расположение дистрибутива и выбор папки вручную```
-* Настраиваемое **ограничение загрузки** файлов игры
-```Ограничение пропускной способности сети```
-* Настраиваемое **отображение прогресса загрузки** обновлений
- * Полный прогресс загрузки
- * Текущий прогремм загрузки
- * Смешанный прогресс загрузки
-
----
-## Отзывы
-Я бы с удовольствием получал отзывы о недоработках, предложениях и Ваши наработки. Создавайте Github issues, или пишите личным сообщением (по предоставленным контактным данным).
-
-### Разработка
-* [Гагауз Сергей](https://vk.com/gagauz_s)
-
-### Контактные данные
-- *Telegram*: [@Jumper92](https://t.me/Jumper92);
-- *Skype*: [gagauz200992](skype:gagauz200992?add);
-- *E-Mail*: gaga-ya@hotmail.com.
+* ** Autorización automática en el cliente del juego ** en los datos de usuario guardados:
+`` `Los datos ingresados ​​por defecto permanecen anónimos```
+* Indicación explícita e implícita ** de la ruta del cliente del juego **
+`` `Instalar el programa en la raíz del cliente del juego o la ubicación libre de la distribución y seleccionar la carpeta manualmente``
+* Archivos de juego de ** límite de descarga ** configurables **
+`` `Limitar el ancho de banda de la red``
+* Pantalla ** configurable de progreso de descarga ** actualizaciones
+ * Progreso de descarga completa
+ * Velocidad de descarga actual
+ * Progreso de carga mixta
 
 ---
-## Лицензия
-WoW Launcher распространяется под GPLv3 лицензией. Для большей информации смотрите файл LICENSE.
+## Comentarios
+Con mucho gusto recibiré comentarios sobre los defectos, las propuestas y sus logros. Crea problemas Github o escribe un mensaje personal (en la información de contacto provista).
+
+### Desarrollo
+* [Gagauz Sergey] (https://vk.com/gagauz_s)
+
+### Detalles de contacto
+- * Telegram *: [@ Jumper92] (https://t.me/Jumper92);
+- * Skype *: [gagauz200992] (skype: gagauz200992? Agregar);
+- * E-Mail *: gaga-ya@hotmail.com.
+
+---
+## License
+WoW Launcher se distribuye bajo la licencia GPLv3. Para obtener más información, vea el archivo LICENCIA.
