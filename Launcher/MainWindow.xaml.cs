@@ -144,7 +144,7 @@ namespace Launcher
             }
             else
             {
-                MessageBox.Show("No se puede conectar a Internet, verifique su conexión y vuelva a intentarlo", "Error de conexión.", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("No puede conectarse a Internet, verifique su conexión y vuelva a intentarlo.", " Error de conexión.", MessageBoxButton.OK, MessageBoxImage.Error);
                 Application.Current.Shutdown();
             }
         }
@@ -169,9 +169,10 @@ namespace Launcher
             }
         }
 
-        /// <summary>
-        /// Inicie la sincronización del archivo por la carpeta del juego (si se configuró antes)
-        /// </summary>
+        /// <resumen>
+        /// Inicia sincronización de archivo por carpeta de juego (si se configuró antes)
+        /// </ summary>
+        /// 
         private void FileSync()
         {
             if (Properties.Settings.Default.gameFolder.Equals("Не задано"))
@@ -181,7 +182,7 @@ namespace Launcher
                 }
                 else
                 {
-                    MessageBoxResult result = MessageBox.Show("El Archivo \"Syndicate.exe\" No se encuentra!\nPor favor ponga el launcher en la carpeta donde se encuentre el ejecutable!\n\nLa ruta del archivo esta bien especificada?", "Error de la ubicación del launcher.", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                    MessageBoxResult result = MessageBox.Show("¡El archivo \"Syndicate.exe\" no se encuentra! \nPor favor, ponga el programa en la carpeta del juego o especifique la ruta a la carpeta con el juego. \n \n ¿Especifica la ruta ahora?", "Error de ubicación", MessageBoxButton.YesNo, MessageBoxImage.Question);
                     TryToFindFolder(result);
                 }
             else
@@ -194,7 +195,7 @@ namespace Launcher
         private void ShowFolderDialog()
         {
             FolderBrowserDialog folder = new System.Windows.Forms.FolderBrowserDialog();
-            folder.Description = "Seleccione la carpeta donde se encuentre el cliente de juego.";
+            folder.Description = "Seleccione la carpeta con el cliente del juego.";
             folder.RootFolder = Environment.SpecialFolder.MyComputer;
             folder.ShowNewFolderButton = false;
             DialogResult result = folder.ShowDialog();
@@ -209,7 +210,7 @@ namespace Launcher
                 }
                 else
                 {
-                    MessageBoxResult retryResult = MessageBox.Show("En la carpeta seleccinada no se encuentra el ejecutable Syndicate.exe.", "Error al seleccionar la carpeta.", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                    MessageBoxResult retryResult = MessageBox.Show("En la carpeta seleccionada, ¡No se encuentra el archivo \"Syndicate.exe\"! \n ¡Seleccione la carpeta correcta con el juego dentro de ella! \n \n¿Repetiste la selección?", "Error al seleccionar la carpeta.", MessageBoxButton.YesNo, MessageBoxImage.Question);
                     TryToFindFolder(retryResult);
                 }
             }
@@ -258,7 +259,7 @@ namespace Launcher
                 //    _pListDel = Properties.Settings.Default.PatchToDelete;
                 default:
                     //TODO: CHANGE SERVER NAME AND CLIENT VERSION
-                    MessageBoxResult result = MessageBox.Show("Para jugar en Syndicate requiere una versión de cliente de juego que sea la 3.3.5a! Coloque el programa en la carpeta correcta con el juego o especifique la ruta a la carpeta.\n\nEspecificaste ya la ruta?", "Error de la versión del cliente", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                    MessageBoxResult result = MessageBox.Show("Para jugar en el servidor WoW Syndicate requiere una versión de cliente 3.3.5a! Coloque el launcher en la carpeta correcta con el juego o especifique la ruta a la carpeta! \n \nQuiere especificar la ruta ahora? ","Versión de error del cliente", MessageBoxButton.YesNo, MessageBoxImage.Question);
                     TryToFindFolder(result);
                     break;
             }
@@ -402,6 +403,11 @@ namespace Launcher
                     btn_play.IsEnabled = false;
                     TaskbarPlay.IsEnabled = false;
                     progress.Value = 0;
+
+                    /*Posiblemente esto se deba modificar pero ambos valores deben de ser iguales.*/
+
+                    //La traduccion es "Inicializando ..."
+
                     labelmsg.Content = "Инициализация...";
                     _count = 0;
                     startDownloadBackgroundWorker.RunWorkerAsync();
@@ -591,11 +597,11 @@ namespace Launcher
             total = detectSize(totalBytes);
             speed = detectSize(dSpeed);
 
-            string downloaded = "Загружено (" + _count + "/" + _length + ") : " + received + "  /  " + total;
+            string downloaded = "Total descargado: (" + _count + "/" + _length + ") : " + received + "  /  " + total;
 
             double avaiting = (Convert.ToDouble(totalBytes - (currentBytes - currentBytes2)) / 1024) / (Convert.ToDouble(currentBytes2) / 1024 / sw.Elapsed.TotalSeconds) - (Convert.ToDouble(currentBytes2) / 1024) / (Convert.ToDouble(currentBytes2) / 1024 / sw.Elapsed.TotalSeconds);
 
-            labelprogress.Content = downloaded + " (" + speed + "/с)" + " ~" + ((int)(avaiting / 3600)).ToString("0") + " ч " + ((int)(avaiting % 3600 / 60)).ToString("0") + " мин " + (avaiting % 3600 % 60).ToString("0") + " сек";
+            labelprogress.Content = downloaded + " (" + speed + "/с)" + " ~" + ((int)(avaiting / 3600)).ToString("0") + " ч " + ((int)(avaiting % 3600 / 60)).ToString("0") + " мин " + (avaiting % 3600 % 60).ToString("0") + " segundos";
 
             //labelmsg.Content = "Оставшееся время: " + ((int)(avaiting / 3600)).ToString("0") + " ч " + ((int)(avaiting % 3600 / 60)).ToString("0") + " мин " + (avaiting % 3600 % 60).ToString("0") + " сек";
         }
@@ -612,7 +618,7 @@ namespace Launcher
                 if (value >= 1073741824)
                     return string.Format("{0:0.00}GB", double.Parse(value.ToString()) / 1024 / 1024 / 1024);
                 else if (value >= 1048576)
-                    return string.Format("{0:0.00}MB", double.Parse(value.ToString()) / 1024 / 1024);
+                    return string.Format("{0:0.00}МB", double.Parse(value.ToString()) / 1024 / 1024);
                 else
                     return string.Format("{0:0}КB", double.Parse(value.ToString()) / 1024);
             }
@@ -684,11 +690,11 @@ namespace Launcher
                     { }
                 }
 
-                MessageBox.Show("Todos los archivos se eliminaron correctemente", "Eliminar archivos", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show("Todos los archivos fueron eliminados con éxito", "Eliminar archivos.", MessageBoxButton.OK, MessageBoxImage.Information);
 
                 btn_play.Visibility = Visibility.Hidden;
 
-                labelmsg.Content = "El cliente no puede ser lanzado.";
+                labelmsg.Content = "El cliente no puede ser ejecutado.";
             }
         }
 
@@ -753,7 +759,7 @@ namespace Launcher
 
                     ni.Icon = new System.Drawing.Icon(Application.GetResourceStream(new Uri("pack://application:,,,/img/101.ico")).Stream);
                     ni.Visible = true;
-                    ni.ShowBalloonTip(2000, "Launcher", "El launcher continúa ejecutándose en segundo plano. Para implementarlo, use el doble clic del botón izquierdo del ratón.", ToolTipIcon.Info);
+                    ni.ShowBalloonTip(2000, "Ejecutable", "El ejecutable continúa ejecutándose en segundo plano. Para implementarlo, haga doble clic en el botón izquierdo del mouse", ToolTipIcon.Info);
                     this.Hide();
                     ni.DoubleClick +=
                         delegate(object sender, EventArgs args)
@@ -815,7 +821,12 @@ namespace Launcher
             {
                 MessageBox.Show(ex.Message);
 
-                if (ex.Message.Equals("No se puede encontrar el archivo especificado."))
+                /* 
+                 * Si el mensaje de la excepeción es igual a "No se puede encontrar el archivo especificado"
+                 * entonces me muestra un dialog de la carpeta
+                 */
+
+                if (ex.Message.Equals("Не удается найти указанный файл"))
                     ShowFolderDialog();
             }
         }
@@ -835,7 +846,10 @@ namespace Launcher
             {
                 (window as Settings).btn_del.IsEnabled = false;
                 (window as Settings).resetPath.IsEnabled = false;
-                (window as Settings).btn_del.ToolTip = "No es posible hacer esto.\nMientras se este actualizando.";
+
+                //Significa "No es posible realizar \n durante el proceso de actualización."
+
+                (window as Settings).btn_del.ToolTip = "Не возможно выполнить\nво время процесса обновления";
             }
 
             window.Owner = this;
@@ -865,7 +879,7 @@ namespace Launcher
                 
         private void link_main_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            Process.Start("https://wowsyndicate.com/");
+            Process.Start("https://www.wowsyndicate.com/");
         }
 
         private void link_cabinet_Click(object sender, System.Windows.RoutedEventArgs e)

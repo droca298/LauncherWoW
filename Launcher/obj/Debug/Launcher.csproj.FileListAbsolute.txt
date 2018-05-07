@@ -1,24 +1,24 @@
-C:\Users\Daniel\Documents\Launcher WoW - proyecto\WOWLauncher-master\WOWLauncher-master\Launcher\bin\Debug\%YourName%.exe.config
-C:\Users\Daniel\Documents\Launcher WoW - proyecto\WOWLauncher-master\WOWLauncher-master\Launcher\bin\Debug\%YourName%.exe
-C:\Users\Daniel\Documents\Launcher WoW - proyecto\WOWLauncher-master\WOWLauncher-master\Launcher\bin\Debug\%YourName%.pdb
-C:\Users\Daniel\Documents\Launcher WoW - proyecto\WOWLauncher-master\WOWLauncher-master\Launcher\obj\Debug\LNewVer.baml
-C:\Users\Daniel\Documents\Launcher WoW - proyecto\WOWLauncher-master\WOWLauncher-master\Launcher\obj\Debug\NewsLoaderControl.baml
-C:\Users\Daniel\Documents\Launcher WoW - proyecto\WOWLauncher-master\WOWLauncher-master\Launcher\obj\Debug\Settings.baml
-C:\Users\Daniel\Documents\Launcher WoW - proyecto\WOWLauncher-master\WOWLauncher-master\Launcher\obj\Debug\Style\LauncherStyle.baml
-C:\Users\Daniel\Documents\Launcher WoW - proyecto\WOWLauncher-master\WOWLauncher-master\Launcher\obj\Debug\VerUpd.baml
-C:\Users\Daniel\Documents\Launcher WoW - proyecto\WOWLauncher-master\WOWLauncher-master\Launcher\obj\Debug\App.baml
-C:\Users\Daniel\Documents\Launcher WoW - proyecto\WOWLauncher-master\WOWLauncher-master\Launcher\obj\Debug\LNewVer.g.cs
-C:\Users\Daniel\Documents\Launcher WoW - proyecto\WOWLauncher-master\WOWLauncher-master\Launcher\obj\Debug\MainWindow.g.cs
-C:\Users\Daniel\Documents\Launcher WoW - proyecto\WOWLauncher-master\WOWLauncher-master\Launcher\obj\Debug\NewsLoaderControl.g.cs
-C:\Users\Daniel\Documents\Launcher WoW - proyecto\WOWLauncher-master\WOWLauncher-master\Launcher\obj\Debug\Settings.g.cs
-C:\Users\Daniel\Documents\Launcher WoW - proyecto\WOWLauncher-master\WOWLauncher-master\Launcher\obj\Debug\VerUpd.g.cs
-C:\Users\Daniel\Documents\Launcher WoW - proyecto\WOWLauncher-master\WOWLauncher-master\Launcher\obj\Debug\App.g.cs
-C:\Users\Daniel\Documents\Launcher WoW - proyecto\WOWLauncher-master\WOWLauncher-master\Launcher\obj\Debug\GeneratedInternalTypeHelper.g.cs
-C:\Users\Daniel\Documents\Launcher WoW - proyecto\WOWLauncher-master\WOWLauncher-master\Launcher\obj\Debug\%YourName%_MarkupCompile.cache
-C:\Users\Daniel\Documents\Launcher WoW - proyecto\WOWLauncher-master\WOWLauncher-master\Launcher\obj\Debug\%YourName%_MarkupCompile.lref
-C:\Users\Daniel\Documents\Launcher WoW - proyecto\WOWLauncher-master\WOWLauncher-master\Launcher\obj\Debug\MainWindow.baml
-C:\Users\Daniel\Documents\Launcher WoW - proyecto\WOWLauncher-master\WOWLauncher-master\Launcher\obj\Debug\%YourName%.g.resources
-C:\Users\Daniel\Documents\Launcher WoW - proyecto\WOWLauncher-master\WOWLauncher-master\Launcher\obj\Debug\Launcher.Properties.Resources.resources
-C:\Users\Daniel\Documents\Launcher WoW - proyecto\WOWLauncher-master\WOWLauncher-master\Launcher\obj\Debug\Launcher.csproj.GenerateResource.Cache
-C:\Users\Daniel\Documents\Launcher WoW - proyecto\WOWLauncher-master\WOWLauncher-master\Launcher\obj\Debug\%YourName%.exe
-C:\Users\Daniel\Documents\Launcher WoW - proyecto\WOWLauncher-master\WOWLauncher-master\Launcher\obj\Debug\%YourName%.pdb
+C:\Users\Daniel\Documents\Launcher WoW - proyecto\Luancher prueba\WOWLauncher-master\Launcher\bin\Debug\%YourName%.exe.config
+C:\Users\Daniel\Documents\Launcher WoW - proyecto\Luancher prueba\WOWLauncher-master\Launcher\bin\Debug\%YourName%.exe
+C:\Users\Daniel\Documents\Launcher WoW - proyecto\Luancher prueba\WOWLauncher-master\Launcher\bin\Debug\%YourName%.pdb
+C:\Users\Daniel\Documents\Launcher WoW - proyecto\Luancher prueba\WOWLauncher-master\Launcher\obj\Debug\LNewVer.baml
+C:\Users\Daniel\Documents\Launcher WoW - proyecto\Luancher prueba\WOWLauncher-master\Launcher\obj\Debug\NewsLoaderControl.baml
+C:\Users\Daniel\Documents\Launcher WoW - proyecto\Luancher prueba\WOWLauncher-master\Launcher\obj\Debug\Settings.baml
+C:\Users\Daniel\Documents\Launcher WoW - proyecto\Luancher prueba\WOWLauncher-master\Launcher\obj\Debug\Style\LauncherStyle.baml
+C:\Users\Daniel\Documents\Launcher WoW - proyecto\Luancher prueba\WOWLauncher-master\Launcher\obj\Debug\VerUpd.baml
+C:\Users\Daniel\Documents\Launcher WoW - proyecto\Luancher prueba\WOWLauncher-master\Launcher\obj\Debug\App.baml
+C:\Users\Daniel\Documents\Launcher WoW - proyecto\Luancher prueba\WOWLauncher-master\Launcher\obj\Debug\LNewVer.g.cs
+C:\Users\Daniel\Documents\Launcher WoW - proyecto\Luancher prueba\WOWLauncher-master\Launcher\obj\Debug\MainWindow.g.cs
+C:\Users\Daniel\Documents\Launcher WoW - proyecto\Luancher prueba\WOWLauncher-master\Launcher\obj\Debug\NewsLoaderControl.g.cs
+C:\Users\Daniel\Documents\Launcher WoW - proyecto\Luancher prueba\WOWLauncher-master\Launcher\obj\Debug\Settings.g.cs
+C:\Users\Daniel\Documents\Launcher WoW - proyecto\Luancher prueba\WOWLauncher-master\Launcher\obj\Debug\VerUpd.g.cs
+C:\Users\Daniel\Documents\Launcher WoW - proyecto\Luancher prueba\WOWLauncher-master\Launcher\obj\Debug\App.g.cs
+C:\Users\Daniel\Documents\Launcher WoW - proyecto\Luancher prueba\WOWLauncher-master\Launcher\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Daniel\Documents\Launcher WoW - proyecto\Luancher prueba\WOWLauncher-master\Launcher\obj\Debug\%YourName%_MarkupCompile.cache
+C:\Users\Daniel\Documents\Launcher WoW - proyecto\Luancher prueba\WOWLauncher-master\Launcher\obj\Debug\%YourName%_MarkupCompile.lref
+C:\Users\Daniel\Documents\Launcher WoW - proyecto\Luancher prueba\WOWLauncher-master\Launcher\obj\Debug\MainWindow.baml
+C:\Users\Daniel\Documents\Launcher WoW - proyecto\Luancher prueba\WOWLauncher-master\Launcher\obj\Debug\%YourName%.g.resources
+C:\Users\Daniel\Documents\Launcher WoW - proyecto\Luancher prueba\WOWLauncher-master\Launcher\obj\Debug\Launcher.Properties.Resources.resources
+C:\Users\Daniel\Documents\Launcher WoW - proyecto\Luancher prueba\WOWLauncher-master\Launcher\obj\Debug\Launcher.csproj.GenerateResource.Cache
+C:\Users\Daniel\Documents\Launcher WoW - proyecto\Luancher prueba\WOWLauncher-master\Launcher\obj\Debug\%YourName%.exe
+C:\Users\Daniel\Documents\Launcher WoW - proyecto\Luancher prueba\WOWLauncher-master\Launcher\obj\Debug\%YourName%.pdb

@@ -38,6 +38,6 @@
 
             </FlowDocument>
         </RichTextBox>
-        <Label MouseDown="rectangle1_MouseDown" Content="Descripción detallada de las actualizaciones." HorizontalAlignment="Left" Margin="12,8,0,0" Name="label1" Width="409" Foreground="White" FontWeight="Bold" FontSize="15" Height="32" VerticalAlignment="Top" />
+        <Label MouseDown="rectangle1_MouseDown" Content="Описание обновлений программы" HorizontalAlignment="Left" Margin="12,8,0,0" Name="label1" Width="409" Foreground="White" FontWeight="Bold" FontSize="15" Height="32" VerticalAlignment="Top" />
     </Grid>
 </Window>

@@ -7,13 +7,13 @@ using System.Windows;
 // Управление общими сведениями о сборке осуществляется с помощью 
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("Launcher Syndicate.")]
-[assembly: AssemblyDescription("Launcher para descargar y actualizar el World of Warcraft.")]
+[assembly: AssemblyTitle("Syndicate")]
+[assembly: AssemblyDescription("WoW Syndicate servidor custom v.3.3.5a")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("WoW Syndicate")]
+[assembly: AssemblyCompany("Syndicate")]
 [assembly: AssemblyProduct("Syndicate Launcher")]
 [assembly: AssemblyCopyright("Copyright © Syndicate 2018")]
-[assembly: AssemblyTrademark("Launcher de WoW Syndicate,")]
+[assembly: AssemblyTrademark("Syndicate World of Warcraft Launchers")]
 [assembly: AssemblyCulture("")]
 
 // Параметр ComVisible со значением FALSE делает типы в сборке невидимыми 
